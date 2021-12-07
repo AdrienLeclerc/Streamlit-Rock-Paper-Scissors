@@ -47,7 +47,8 @@ def teachable_machine_classification(img, file):
     return np.argmax(prediction)
 
 st.image("https://i.imgur.com/CikgsKT.png")
-st.title("Image Classification avec Teachable Machine Learning de Google !")
+st.title("Image Classification avec Teachable Machine de Google !")
+st.text("Plus d'information sur Teachable Machine par ici : https://teachablemachine.withgoogle.com/")
 st.header("Normal X Ray Vs Pneumonia X Ray")
 st.text("Upload a X Ray to detect it is normal or has pneumonia")
 # file upload and handling logic

@@ -48,13 +48,13 @@ def teachable_machine_classification(img, file):
 
 st.image("https://i.imgur.com/CikgsKT.png")
 
-st.title("Pierre, Feuille, Ciseaux : Image Classification avec Teachable Machine de Google !")
+st.header("Image Classification avec Teachable Machine de Google !")
 
 st.markdown("Plus d'information sur Teachable Machine par ici : [Teachable Machine](https://teachablemachine.withgoogle.com)", unsafe_allow_html = True)
 
 st.markdown("Base de donnée Kaggle utilisée pour entrainer le modèle : [Dataset](https://www.kaggle.com/drgfreeman/rockpaperscissors)", unsafe_allow_html = True)
 
-st.header("Normal X Ray Vs Pneumonia X Ray")
+st.header("Pierre, Feuille ou Ciseaux ?")
 
 # file upload and handling logic
 uploaded_file = st.file_uploader("Choisissez la photo que vous voulez analyser ou prenez la directement avec votre Smartphone ou Webcam !")

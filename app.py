@@ -52,7 +52,7 @@ st.header("Image Classification avec Teachable Machine de Google !")
 
 st.markdown("Plus d'information sur Teachable Machine par ici : [Teachable Machine](https://teachablemachine.withgoogle.com)", unsafe_allow_html = True)
 
-st.markdown("Base de donnée Kaggle utilisée pour entrainer le modèle : [Dataset](https://www.kaggle.com/drgfreeman/rockpaperscissors)", unsafe_allow_html = True)
+st.markdown("Base de donnée Kaggle utilisée pour entrainer le modèle (2189 images) : [Dataset](https://www.kaggle.com/drgfreeman/rockpaperscissors)", unsafe_allow_html = True)
 
 st.header("Pierre, Feuille ou Ciseaux ?")
 
@@ -74,10 +74,10 @@ if uploaded_file is not None:
     label = teachable_machine_classification(image,'keras_model.h5')
     
     if label == 0:
-        st.write("Roche")
+        st.title("Pierre")
         
     elif label == 1:
-        st.write("Papier")
+        st.title("Feuille")
         
     else : 
-        st.write("Sciseaux")
+        st.title("Ciseaux")

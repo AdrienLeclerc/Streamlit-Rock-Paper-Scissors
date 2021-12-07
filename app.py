@@ -77,10 +77,10 @@ if uploaded_file is not None:
         st.title("Pierre !")
         st.image("https://i.imgur.com/H6oP51Q.png")
         
-    elif label == 1:
+    if label == 1:
         st.title("Feuille !")
         st.image("https://i.imgur.com/8qm3eBI.png")
         
-    else : 
+    if label == 2: 
         st.title("Ciseaux !")
         st.image("https://i.imgur.com/aAgzv1z.png")

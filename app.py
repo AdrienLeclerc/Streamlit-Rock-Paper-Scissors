@@ -48,7 +48,7 @@ def teachable_machine_classification(img, file):
 
 st.image("https://i.imgur.com/CikgsKT.png")
 st.title("Image Classification avec Teachable Machine de Google !")
-st.text("Plus d'information sur Teachable Machine par ici : [link](https://teachablemachine.withgoogle.com)")
+st.markdown("Plus d'information sur Teachable Machine par ici : [link](https://teachablemachine.withgoogle.com)", unsafe_allow_html = True)
 st.header("Normal X Ray Vs Pneumonia X Ray")
 st.text("Upload a X Ray to detect it is normal or has pneumonia")
 # file upload and handling logic

@@ -7,8 +7,6 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from PIL import Image, ImageOps
 import numpy as np
 
-file ="C:\\Users\\33761\\Desktop\\Projets Perso\\Streamlit Pierre Feuille Cisseaux\keras_model.h5"
-
 def teachable_machine_classification(img, file):
     # Disable scientific notation for clarity
     np.set_printoptions(suppress=True)
@@ -48,7 +46,8 @@ def teachable_machine_classification(img, file):
     #print(prediction)
     return np.argmax(prediction)
 
-st.title("Image Classification with Teachable Machine Learning")
+st.image("https://i.imgur.com/CikgsKT.png")
+st.title("Image Classification avec Teachable Machine Learning de Google !")
 st.header("Normal X Ray Vs Pneumonia X Ray")
 st.text("Upload a X Ray to detect it is normal or has pneumonia")
 # file upload and handling logic

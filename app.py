@@ -65,7 +65,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
 #image = Image.open(img_name).convert('RGB')
 
-    st.image(image, caption='Uploaded a X Ray IMage.', use_column_width=True)
+    st.image(image, use_column_width=True)
     
     st.write("")
     
@@ -74,10 +74,11 @@ if uploaded_file is not None:
     label = teachable_machine_classification(image,'keras_model.h5')
     
     if label == 0:
-        st.title("Pierre")
+        st.title("Pierre !")
+        st.image("https://i.imgur.com/H6oP51Q.png")
         
     elif label == 1:
-        st.title("Feuille")
+        st.title("Feuille !")
         
     else : 
-        st.title("Ciseaux")
+        st.title("Ciseaux !")

@@ -69,7 +69,7 @@ if uploaded_file is not None:
     
     st.write("")
     
-    st.write("Classifying a X Ray Image - Normal Vs Pneumonia.........hold tight")
+    st.write("Encore quelques petites secondes....")
     
     label = teachable_machine_classification(image,'keras_model.h5')
     
